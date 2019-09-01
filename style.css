@@ -11,33 +11,49 @@ main {
 	margin-right: auto;
 }
 
-header {
-	background-color: #ff8138;
-	color : black;
-	height: 100%; /* Full-height: remove this if you want "auto" height */
-	width: 240px; /* Set the width of the sidebar */
-	position: absolute; /* Fixed Sidebar (stay in place on scroll) */
-	z-index: 1; /* Stay on top */
-	top: 0; /* Stay at the top */
-	left: 0;
-	padding: 20px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+@media only screen and (min-width: 720px) {
+    header {
+        background-color: #ff8138;
+        color : black;
+        height: 100%; /* Full-height: remove this if you want "auto" height */
+        width: 240px; /* Set the width of the sidebar */
+        position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    article {
+        margin-left: 270px;
+        max-width: 800px;
+    }
+
+    section:not(#sidebar){
+        background-color: white;
+        padding: 20px;
+        margin: 25px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 }
 
-article {
-	margin-left: 270px;
-	max-width: 800px;
-}
 
+@media only screen and (max-width: 720px) {
+#sidebar {
+    background-color: #ff8138;
+}
 section{
     background-color: white;
-	padding: 20px;
-	margin: 25px;
-	border-radius: 20px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 }
 
-section:first-of-type {
+section:first-of-type:not(#sidebar) {
 	background-color: black;
 	color: white;
 }
