@@ -58,10 +58,12 @@ figure {
 
 header ul {
     list-style: none;
+    padding-left:0px;
+    margin-left: 1em;
 }
 
 h1 {
-    margin: 0px;
+    margin-left: 0px;
 }
 
 
