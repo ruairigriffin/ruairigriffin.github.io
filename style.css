@@ -1,6 +1,6 @@
-html{
+html {
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    background-color: #fafcff;
+	background-color: #FFF5FF; 
 }
 
 main {
@@ -11,59 +11,89 @@ main {
 	margin-right: auto;
 }
 
+#first {
+	position: relative;
+}
+
+header {
+	visibility: hidden;
+}
+
+h3 {
+	margin: 0px 0px 10px 0px;
+}
+
+
+#top-bar-picture {
+	position: absolute;
+	top: 20px;
+	height: 100%;
+	right: 10px;
+}
+
+.inline {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40%;
+}
+
+/* Big screens */
 @media only screen and (min-width: 720px) {
-    header {
-        background-color: #ff8138;
-        color : black;
-        height: 100%; /* Full-height: remove this if you want "auto" height */
-        width: 240px; /* Set the width of the sidebar */
-        position: absolute; /* Fixed Sidebar (stay in place on scroll) */
-        z-index: 1; /* Stay on top */
-        top: 0; /* Stay at the top */
-        left: 0;
-        padding: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-    
-    article {
-        margin-left: 270px;
-        max-width: 800px;
-    }
+	article {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 800px;
+	}
 
-    section:not(#sidebar){
-        background-color: white;
-        padding: 20px;
-        margin: 25px;
-        border-radius: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
+	section {
+		background-color: white;
+		padding: 20px;
+		margin: 25px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.inline-on-big {
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+#jobtitle {
+	display: inline;
 }
 
 
+/* Big screens */
+@media only screen and (min-width: 720px) {
+	article {
+
+	}
+
+}
+
+
+/* Small screens */
 @media only screen and (max-width: 720px) {
-#sidebar {
-    background-color: #ff8138;
-}
-section{
-    background-color: white;
-    padding: 20px;
-    margin: 25px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
+	section{
+		background-color: white;
+		padding: 20px;
+		margin: 25px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
 }
 
-section:first-of-type:not(#sidebar) {
+section:first-of-type {
 	background-color: black;
 	color: white;
 }
 
 
 img{
-    margin:0px;
-    padding:0px;
-	width: 100%;
-	height: auto;
+	margin:0px;
+	padding:0px;
+	width: auto;
+	height: 80px;
 	border-radius: 50%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -72,36 +102,27 @@ figure {
 	margin: 0px;
 }
 
-header ul {
-    list-style: none;
-    padding-left:0px;
-    margin-left: 1em;
-}
-
 h1 {
-    margin-left: 0px;
-}
-
-
-
-h2 {
-	font-size: xx-large;
+	font-size: x-large;
 	margin: 0px;
 }
 
+h2 {	
+	font-size: large;
+	margin: 0px;
+}
 
-h4{
-    margin: 0px;
+h4 {
+	margin: 0px;
 }
 
 ul {
-    margin: 1em;
+	margin: 1em;
 }
 
-
 a {
-    background-color: black;
-    color: white;
+	background-color: black;
+	color: white;
 	width: auto;
 	display: inline-block;
 }
